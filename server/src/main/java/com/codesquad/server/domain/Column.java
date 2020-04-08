@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.data.annotation.Id;
 
 @Getter
 @Setter
@@ -11,16 +12,11 @@ import lombok.Setter;
 @AllArgsConstructor
 public class Column {
 
+    @Id
     private Long id;
     private String name;
-    private int previousColumnId;
 
-    @Override
-    public String toString() {
-        return "Column{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", previousColumnId=" + previousColumnId +
-                '}';
+    public Column (String name) {
+        this.name = name;
     }
 }
