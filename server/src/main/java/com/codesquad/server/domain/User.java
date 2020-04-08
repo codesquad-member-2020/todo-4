@@ -9,5 +9,17 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class User {
-    private String id;
+
+    private Long id;
+    private String userId;
+    private String password;
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id='" + id + '\'' +
+                ", userId='" + userId + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
 }

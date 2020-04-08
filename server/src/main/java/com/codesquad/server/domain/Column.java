@@ -10,4 +10,17 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Column {
+
+    private Long id;
+    private String name;
+    private int previousColumnId;
+
+    @Override
+    public String toString() {
+        return "Column{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", previousColumnId=" + previousColumnId +
+                '}';
+    }
 }

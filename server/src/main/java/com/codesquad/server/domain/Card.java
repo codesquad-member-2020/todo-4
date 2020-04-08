@@ -9,4 +9,17 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Card {
+
+    private Long id;
+    private String note;
+    private int previousCardId;
+
+    @Override
+    public String toString() {
+        return "Card{" +
+                "id=" + id +
+                ", note='" + note + '\'' +
+                ", previousCardId=" + previousCardId +
+                '}';
+    }
 }
