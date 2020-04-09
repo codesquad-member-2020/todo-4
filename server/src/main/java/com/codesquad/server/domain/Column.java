@@ -28,4 +28,5 @@ public class Column {
     public void addCard(String note) {
         cards.add(new Card(note));
     }
+
 }
