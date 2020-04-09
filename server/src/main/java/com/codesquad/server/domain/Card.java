@@ -14,14 +14,16 @@ public class Card {
     @Id
     private Long id;
     private String note;
-    private int previousCardId;
+
+    public Card(String note) {
+        this.note = note;
+    }
 
     @Override
     public String toString() {
         return "Card{" +
                 "id=" + id +
                 ", note='" + note + '\'' +
-                ", previousCardId=" + previousCardId +
                 '}';
     }
 }
