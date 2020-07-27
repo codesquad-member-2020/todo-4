@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 @Slf4j
 @RequiredArgsConstructor
 @RestController
-@RequestMapping("/api/columns")
+@RequestMapping("/columns")
 public class ColumnsController {
 
     private final ColumnsService columnsService;

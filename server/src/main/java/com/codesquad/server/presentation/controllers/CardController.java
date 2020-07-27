@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 @Slf4j
 @RequiredArgsConstructor
 @RestController
-@RequestMapping("/api/columns/{columnId}/cards")
+@RequestMapping("/columns/{columnId}/cards")
 public class CardController {
 
     private final CardService cardService;

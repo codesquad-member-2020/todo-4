@@ -15,7 +15,7 @@ public class HistoryController {
     private final HistoryRepository historyRepository;
 
     @ResponseStatus(value = HttpStatus.OK)
-    @GetMapping("/api/histories")
+    @GetMapping("/histories")
     public Iterable<History> list() {
         return historyRepository.findAll();
     }
