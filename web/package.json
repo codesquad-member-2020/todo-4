@@ -35,7 +35,7 @@
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-typescript": "^7.9.0",
     "@babel/runtime": "^7.9.2",
-    "@storybook/html": "^5.3.18",
+    "@storybook/html": "^7.0.26",
     "@storybook/preset-typescript": "^3.0.0",
     "@types/jest": "^25.2.1",
     "babel-loader": "^8.1.0",
